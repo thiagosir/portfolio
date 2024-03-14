@@ -1,0 +1,15 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+} */
+
+body {
+  background-color: #000000;
+  /* display: flex;
+  padding-top: 180px;
+  padding-left: 370px;
+  font-family: "Poppins", sans-serif; */
+}
