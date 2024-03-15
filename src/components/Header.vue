@@ -14,7 +14,7 @@ export default {
       </p>
     </div>
     <div class="image">
-      <img src="@/assets/myPic.jpeg" alt="" class="my_photo">
+      <img src="@/assets/images/myPic.jpeg" alt="" class="my_photo">
     </div>
   </div>
 </template>
