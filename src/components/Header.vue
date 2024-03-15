@@ -10,7 +10,7 @@ export default {
   <div class="header">
     <div class="description">
       <p class="description_words">
-        Olá! Eu sou o <span class="my_name">Thiago Couto</span> e sou desenvolvedor full stack
+        Olá! <br> Me chamo <span class="my_name">Thiago Couto</span> <br> e sou desenvolvedor full stack
       </p>
     </div>
     <div class="image">
@@ -29,19 +29,27 @@ export default {
 }
 .description_words {
   color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 33px;
 }
 .my_name {
   color: greenyellow;
 }
 .my_photo {
 border-radius: 200px;
-width: 200px;
-height: 200px;
+border: solid 3px;
+border-color: greenyellow;
+width: 300px;
+height: 300px;
+
 }
 .image {
-  margin-right: 250px;
+  margin-top: 150px;
+  margin-right: 450px;
 }
 .description {
-  margin-left: 250px;;
+  margin-top: 150px;
+  margin-left: 450px;;
 }
 </style>
