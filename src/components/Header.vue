@@ -34,12 +34,12 @@ export default {
   font-size: 33px;
 }
 .my_name {
-  color: greenyellow;
+  color: #14674f;
 }
 .my_photo {
 border-radius: 200px;
 border: solid 3px;
-border-color: greenyellow;
+border-color: #14674f;
 width: 300px;
 height: 300px;
 
