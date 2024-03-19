@@ -77,56 +77,62 @@ export default {
 .about {
   width: 500px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  animation-duration: 2s;
-  animation-name: slidein;
+  animation: slidein 1s ease-out, fadein 2s ease-out;
 }
 
 .information {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  animation-duration: 2s;
-  animation-name: slideinRigth;
+  animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
   width: 300px;
 }
 
 .socials {
   margin-top: 30px;
-  animation-duration: 2s;
-  animation-name: slideinBelow;
-  /* padding: 10px; */
+  animation: slidein 1s ease-out, fadein 2s ease-out, slideinBelow 1s ease-out;
 }
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
     opacity: 0;
+    transform: translateX(-50px);
   }
-  
+
   to {
-    margin-left: 0%;
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
 @keyframes slideinBelow {
   from {
-    margin-bottom: 100%;
     opacity: 0;
+    transform: translateY(50px);
   }
 
   to {
-    margin-bottom: 0%;
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes slideinRigth {
+@keyframes slideinRight {
   from {
-    margin-right: 100%;
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  from {
     opacity: 0;
   }
 
   to {
-    margin-right: 0%;
     opacity: 1;
   }
 }
