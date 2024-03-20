@@ -56,8 +56,8 @@ export default {
 <style scoped>
 .body {
   margin-top: 120px;
-  margin-left: 400px;
-  width: 60%;
+  margin-left: 500px;
+  width: 50%;
   height: 350px;
   border-radius: 15px;
   background-color: #232D3F;

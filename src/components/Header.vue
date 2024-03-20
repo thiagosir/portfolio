@@ -23,9 +23,7 @@ export default {
 .header {
   align-items: center;
   justify-content: space-between;
-
   display: flex;
-  gap: 15px;
 }
 .description_words {
   color: white;
@@ -46,10 +44,10 @@ height: 300px;
 }
 .image {
   margin-top: 150px;
-  margin-right: 450px;
+  margin-right: 500px;
 }
 .description {
   margin-top: 150px;
-  margin-left: 450px;;
+  margin-left: 500px;;
 }
 </style>
