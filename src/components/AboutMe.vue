@@ -55,7 +55,7 @@ export default {
 </template>
 <style scoped>
 .body {
-  margin-top: 55px;
+  margin-top: 120px;
   margin-left: 400px;
   width: 60%;
   height: 350px;

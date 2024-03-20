@@ -6,7 +6,7 @@ export default {
 
 <template>
   <footer class="footer">
-    <p class="text">© 2024. construído e elaborado por Thiago Couto</p>
+    <p class="text">© 2024. construído e elaborado por Thiago Couto.</p>
   </footer>
 </template>
 
@@ -15,10 +15,10 @@ export default {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 200px;
+  height: 100px;
 }
 
 .text {
-  font-size: 11px;
+  font-size: 12px;
 }
 </style>

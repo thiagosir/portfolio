@@ -7,20 +7,26 @@ export default {
 </script>
 
 <template>
-  <div class="body">
-    
+  <div class="body_knowledges">
+    <h1 class="header">Conhecimentos</h1>
+
   </div>
 </template>
 <style scoped>
-.body {
-  margin-top: 55px;
+.body_knowledges {
+  /* margin-top: 55px; */
+  height: 2000rem;
   margin-left: 400px;
   width: 60%;
   height: 350px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
 }
 
 @keyframes slidein {
@@ -68,5 +74,4 @@ export default {
     opacity: 1;
   }
 }
-
 </style>
