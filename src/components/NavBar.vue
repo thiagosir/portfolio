@@ -1,21 +1,22 @@
 <script>
-
 export default {
-
-}
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-50px";
-  }
-}
+  mounted() {
+    let prevScrollpos = window.scrollY;
+    window.onscroll = function () {
+      let currentScrollPos = window.scrollY;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header_nav").style.top = "-50px";
+      } else {
+        document.getElementById("header_nav").style.top = "0";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  },
+};
 </script>
 
 <template>
-  <header class="header_nav">
+  <header class="header_nav" id="header_nav">
     <ul class="nav">
       <li><a href="" class="nav_text">Sobre</a></li>
       <li><a href="" class="nav_text">Conhecimentos</a></li>
@@ -25,6 +26,7 @@ function scrollFunction() {
     </ul>
   </header>
 </template>
+
 <style scoped>
 .header_nav {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,6 +35,10 @@ function scrollFunction() {
   justify-content: center;
   display: flex;
   height: 50px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  transition: top 0.3s;
 }
 
 .nav_text {
@@ -45,8 +51,6 @@ function scrollFunction() {
 .nav {
   padding: 0;
   margin: 0;
-  transition: top 0.3s;
-  position: fixed;
   list-style-type: none;
   display: flex;
   justify-content: center;
