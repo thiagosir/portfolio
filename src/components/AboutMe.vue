@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <main class="main">
+  <main class="main" id="aboutme">
     <div class="body">
       <div class="top-section">
         <div class="about">

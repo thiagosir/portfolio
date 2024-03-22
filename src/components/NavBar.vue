@@ -18,8 +18,8 @@ export default {
 <template>
   <header class="header_nav" id="header_nav">
     <ul class="nav">
-      <li><a href="" class="nav_text">Sobre</a></li>
-      <li><a href="" class="nav_text">Conhecimentos</a></li>
+      <li><a href="#aboutme" class="nav_text">Sobre</a></li>
+      <li><a href="#knowledge" class="nav_text">Conhecimentos</a></li>
       <li><a href="" class="nav_text">Educação</a></li>
       <li><a href="" class="nav_text">Projetos</a></li>
       <li><a href="" class="nav_text">Experiência</a></li>
