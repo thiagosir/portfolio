@@ -170,11 +170,13 @@ export default {
   width: 300px;
   margin-left: -130px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
 }
 
 .desc {
   width: 250px;
   font-size: 13px;
+  color: white;
 }
 
 .tech_buttons {
@@ -188,7 +190,7 @@ export default {
 }
 
 .tech_buttons:hover {
-  border-color: #14674f;
+  border-color: #35bc5d;
 }
 
 .tech_div {
@@ -208,51 +210,5 @@ export default {
 .header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
-}
-
-@keyframes slidein {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideinBelow {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideinRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 </style>

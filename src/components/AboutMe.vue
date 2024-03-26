@@ -84,12 +84,14 @@ export default {
 }
 
 .about {
+  color: white;
   width: 500px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: slidein 1s ease-out, fadein 2s ease-out;
 }
 
 .information {
+  color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
   width: 300px;
