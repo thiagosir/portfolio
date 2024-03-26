@@ -30,7 +30,9 @@ export default {
 <style scoped>
 .header_nav {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #14674f;
+  /* background-color: transparent; */
+  background-color: #232D3F;
+  /* background: linear-gradient(0, #006040, #000000); */
   align-items: center;
   justify-content: center;
   display: flex;

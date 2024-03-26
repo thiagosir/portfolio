@@ -62,14 +62,15 @@ export default {
 .main {
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .body {
-  width: 50%;
+  width: 65%;
   height: 350px;
   border-radius: 15px;
   background-color: #232D3F;
+  /* background: linear-gradient(0, #000000, #006040); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,6 +87,7 @@ export default {
 .about {
   color: white;
   width: 500px;
+  margin-right: 100px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: slidein 1s ease-out, fadein 2s ease-out;
 }
@@ -160,7 +162,7 @@ export default {
 }
 
 .button:hover .svg {
-  fill: #008170;
+  fill: white;
 }
 
 .svg {

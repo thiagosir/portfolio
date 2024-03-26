@@ -38,7 +38,7 @@ export default {
     animateStars() {
       setInterval(() => {
         for (let i = 0; i < this.stars.length; i++) {
-          this.stars[i].top -= 1; // Subtraindo um valor fixo para mover para cima suavemente
+          this.stars[i].top -= 1;
           if (this.stars[i].top < -10) this.stars[i].top = window.innerHeight;
         }
       }, 50);
@@ -63,13 +63,14 @@ export default {
 }
 
 .my_name {
-  color: #14674f;
+  color: #3f6c98;
+  /* color: #14674f; */
 }
 
 .my_photo {
   border-radius: 200px;
-  border: solid 3px;
-  border-color: #14674f;
+  border: solid 2px;
+  border-color: #232D3F;
   width: 300px;
   height: 300px;
 }
@@ -77,17 +78,20 @@ export default {
 .image {
   margin-top: 150px;
   margin-right: 500px;
+  animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
 }
 
 .description {
   margin-top: 150px;
   margin-left: 500px;
+  animation: slidein 1s ease-out, fadein 2s ease-out, slidein 1s ease-out;
 }
 
 .container {
   width: 100%;
   height: 700px;
-  background: linear-gradient(0, #006040, #000000);
+  background: linear-gradient(0, #0F0F0F, #232D3F);
+  /* background: linear-gradient(0, #000000, #006040); */
   overflow: hidden;
   position: relative;
 }
@@ -98,5 +102,51 @@ export default {
   position: absolute;
   border-radius: 50%;
   background-color: white;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideinBelow {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideinRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 </style>

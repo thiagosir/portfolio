@@ -11,8 +11,8 @@ export default {
 </script>
 
 <template>
-  <NavBar />
   <Header />
+  <NavBar />
   <AboutMe />
   <Knowledges />
   <Footer />
