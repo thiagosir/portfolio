@@ -1,20 +1,3 @@
-<template>
-  <div class="container">
-    <div v-for="(star, index) in stars" :key="index" class="star"
-      :style="{ top: star.top + 'px', left: star.left + 'px' }"></div>
-    <div class="header">
-      <div class="description">
-        <p class="description_words">
-          Olá! <br> Me chamo <span class="my_name">Thiago Couto</span> <br> e sou desenvolvedor full stack
-        </p>
-      </div>
-      <div class="image">
-        <img src="@/assets/images/myPic.jpeg" alt="" class="my_photo">
-      </div>
-    </div>
-  </div>
-</template>
-
 <script>
 export default {
   data() {
@@ -46,6 +29,23 @@ export default {
   }
 };
 </script>
+
+<template>
+  <div class="container">
+    <div v-for="(star, index) in stars" :key="index" class="star"
+      :style="{ top: star.top + 'px', left: star.left + 'px' }"></div>
+    <div class="header">
+      <div class="description">
+        <p class="description_words">
+          Olá! <br> Me chamo <span class="my_name">Thiago Couto</span> <br> e sou desenvolvedor full stack
+        </p>
+      </div>
+      <div class="image">
+        <img src="@/assets/images/myPic.jpeg" alt="" class="my_photo">
+      </div>
+    </div>
+  </div>
+</template>
 
 <style scoped>
 .header {
