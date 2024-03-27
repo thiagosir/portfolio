@@ -69,7 +69,7 @@ export default {
   width: 65%;
   height: 350px;
   border-radius: 15px;
-  background-color: #232D3F;
+  background-color: #161717;
   /* background: linear-gradient(0, #000000, #006040); */
   display: flex;
   flex-direction: column;
