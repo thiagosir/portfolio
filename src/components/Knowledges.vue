@@ -158,21 +158,24 @@ export default {
 </template>
 <style scoped>
 .body_knowledges {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
   gap: 150px;
   height: 500px;
-  width: 500px;
+  width: 100%;
 }
 
 .title {
+  padding-bottom: 120px;
   width: 300px;
-  margin-left: -130px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
 }
 
 .desc {
+  height: 100px;
   width: 250px;
   font-size: 13px;
   color: white;
@@ -204,7 +207,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -100px;
+  /* margin-bottom: -100px; */
+  width: 100%;
+  height: 500px;
 }
 
 .header {

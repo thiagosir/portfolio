@@ -21,8 +21,8 @@ export default {
     <div class="body">
       <div class="div-left">
         <div class="nav-left-bar">
-          <div class="compass" @click="showExperience('compass')" :class="{'active': experienceSelected === 'compass'}">Compass</div>
-          <div class="gla" @click="showExperience('gla')" :class="{'active': experienceSelected === 'gla'}">Jogador profissional de GLA</div>
+          <div class="compass" @click="showExperience('compass')" :class="{'active': experienceSelected === 'compass'}"><span class="compass-text">Compass</span></div>
+          <div class="gla" @click="showExperience('gla')" :class="{'active': experienceSelected === 'gla'}"><span class="gla-text">Jogador de GLA profissional</span></div>
         </div>
       </div>
       <div class="text-experience">
@@ -58,10 +58,10 @@ export default {
   flex-direction: column;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  gap: 50px;
 }
 
 .body {
-  margin-top: 70px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -74,7 +74,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 100px;
+  width: 200px;
 }
 
 .company {
@@ -87,15 +87,20 @@ export default {
 }
 
 .header {
-  font-size: 42px;
-  padding-left: 800px;
+  font-size: 38px;
   height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-experience {
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 700px
+  width: 750px;
+  height: 250px;
 }
 
 .date {
@@ -110,6 +115,11 @@ export default {
 
 .nav-left-bar {
   font-size: 16px;
+  padding-bottom: 50px;
+}
+
+.compass-text, .gla-text{
+  padding-left: 10px;
 }
 
 .compass {
@@ -143,11 +153,13 @@ export default {
   background: #161717;
   border-color: #4d6694;
   color: white;
+  transition: 0.5s;
 }
 
 .gla.active {
   background: #161717;
   border-color: #4d6694;
   color: white;
+  transition: 0.5s;
 }
 </style>
