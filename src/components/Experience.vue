@@ -1,5 +1,8 @@
 <script>
 export default {
+  props: {
+    active: Boolean
+  },
   data() {
     return {
       experienceSelected: 'compass'
@@ -18,26 +21,26 @@ export default {
     <div class="body">
       <div class="div-left">
         <div class="nav-left-bar">
-          <div class="compass" @click="showExperience('compass')">Compass</div>
-          <div class="gla" @click="showExperience('gla')">Jogador profissional de GLA</div>
+          <div class="compass" @click="showExperience('compass')" :class="{'active': experienceSelected === 'compass'}">Compass</div>
+          <div class="gla" @click="showExperience('gla')" :class="{'active': experienceSelected === 'gla'}">Jogador profissional de GLA</div>
         </div>
       </div>
       <div class="text-experience">
-        <div v-if="experienceSelected === 'compass'">
+        <div class="compass-style" v-if="experienceSelected === 'compass'">
           <div class="title">
             <h4 class="title-experience">Desenvolvedor de automação de testes</h4>
             <p class="date">Mar 2022 - Set 2022 (6 meses)</p>
           </div>
-          <h5 class="company">Compass.UOL</h5>
+          <a href="https://compass.uol/pt/home/" target="_blank" class="company">Compass.UOL</a>
           <p class="detail-experience">Desenvolvi e automatizei testes utilizando o framework Cypress</p>
         </div>
-        <div v-else-if="experienceSelected === 'gla'">
+        <div class="gla-style" v-else-if="experienceSelected === 'gla'">
           <div class="title">
-            <h4 class="title-experience">Experiência GLA</h4>
-            <p class="date">Data GLA</p>
+            <h4 class="title-experience">Grande jogador de gla</h4>
+            <p class="date">Jan 2024 - Atual</p>
           </div>
-          <h5 class="company">Empresa GLA</h5>
-          <p class="detail-experience">Detalhes GLA</p>
+          <h5 class="company">Grand Line Adventures</h5>
+          <p class="detail-experience">dou aula de como jogar gla da melhor maneira possível. Possuo uma gameplay de alto nível</p>
         </div>
       </div>
     </div>
@@ -63,6 +66,7 @@ export default {
   align-items: center;
   display: flex;
   color: white;
+  gap: 100px;
 }
 
 .div-left {
@@ -71,6 +75,15 @@ export default {
   justify-content: center;
   align-items: center;
   margin-right: 100px;
+}
+
+.company {
+  text-decoration: none;
+  color: white;
+}
+
+.company:hover {
+  color: #4d6694;
 }
 
 .header {
@@ -82,7 +95,7 @@ export default {
 .text-experience {
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  width: 700px
 }
 
 .date {
@@ -92,7 +105,7 @@ export default {
 .title {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .nav-left-bar {
@@ -100,21 +113,41 @@ export default {
 }
 
 .compass {
+  display: flex;
+  align-items: center;
+  height: 30px;
   cursor: pointer;
   border-style: solid;
   border-bottom: 0;
   border-right: 0;
   border-top: 0;
-  border-color: #4d6694;
   margin-bottom: 10px;
 }
 
 .gla {
+  display: flex;
+  align-items: center;
+  height: 30px;
   cursor: pointer;
   border-style: solid;
   border-bottom: 0;
   border-right: 0;
   border-top: 0;
+}
+
+.gla-style {
+  
+}
+
+.compass.active {
+  background: #161717;
   border-color: #4d6694;
+  color: white;
+}
+
+.gla.active {
+  background: #161717;
+  border-color: #4d6694;
+  color: white;
 }
 </style>
