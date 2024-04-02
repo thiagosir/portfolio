@@ -39,8 +39,8 @@ export default {
             <h4 class="title-experience">Grande jogador de gla</h4>
             <p class="date">Jan 2024 - Atual</p>
           </div>
-          <h5 class="company">Grand Line Adventures</h5>
-          <p class="detail-experience">dou aula de como jogar gla da melhor maneira possível. Possuo uma gameplay de alto nível</p>
+          <a href="https://grandlineadventures.com/pt/" target="_blank" class="company">Grand Line Adventures</a>
+          <p class="detail-experience">dou aula de como jogar gla da melhor maneira possível. Possuo uma gameplay de alto nível </p>
         </div>
       </div>
     </div>
@@ -103,63 +103,55 @@ export default {
   height: 250px;
 }
 
-.date {
-  margin-left: 50px;
-}
-
 .title {
   display: flex;
+  width: 750px;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .nav-left-bar {
+  height: 112px;
   font-size: 16px;
-  padding-bottom: 50px;
+  background-color: #0F0F0F;
 }
 
 .compass-text, .gla-text{
   padding-left: 10px;
+  width: 250px;
 }
 
 .compass {
   display: flex;
   align-items: center;
-  height: 30px;
+  height: 50px;
   cursor: pointer;
-  border-style: solid;
-  border-bottom: 0;
-  border-right: 0;
-  border-top: 0;
   margin-bottom: 10px;
+  color: #a6adba;
 }
 
 .gla {
   display: flex;
   align-items: center;
-  height: 30px;
+  height: 50px;
   cursor: pointer;
+  color: #a6adba
+}
+
+.gla-style, .compass-style {
+  width: 750px;
+}
+
+.compass.active, .gla.active {
+  border-color: #2f66c4;
+  color: #2f66c4;
+  /* color: #4d6694; */
+  transition: 0.1s;  
   border-style: solid;
   border-bottom: 0;
   border-right: 0;
   border-top: 0;
 }
 
-.gla-style {
-  
-}
-
-.compass.active {
-  background: #161717;
-  border-color: #4d6694;
-  color: white;
-  transition: 0.5s;
-}
-
-.gla.active {
-  background: #161717;
-  border-color: #4d6694;
-  color: white;
-  transition: 0.5s;
-}
 </style>

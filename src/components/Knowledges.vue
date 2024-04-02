@@ -165,6 +165,7 @@ export default {
   gap: 150px;
   height: 500px;
   width: 100%;
+  margin-top: -100px;
 }
 
 .title {
@@ -183,16 +184,20 @@ export default {
 
 .tech_buttons {
   border-radius: 5px;
-  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #161717;
+  background-color: #161717;
   cursor: pointer;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin: 0;
   padding: 0;
 }
 
 .tech_buttons:hover {
   border-color: #4d6694;
+  transition: 1s;
 }
 
 .tech_div {
