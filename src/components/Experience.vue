@@ -16,13 +16,15 @@ export default {
 };
 </script>
 <template>
-  <main class="container">
+  <main class="container" id="experience">
     <div class="header">Experiências</div>
     <div class="body">
       <div class="div-left">
         <div class="nav-left-bar">
-          <div class="compass" @click="showExperience('compass')" :class="{'active': experienceSelected === 'compass'}"><span class="compass-text">Compass</span></div>
-          <div class="gla" @click="showExperience('gla')" :class="{'active': experienceSelected === 'gla'}"><span class="gla-text">Jogador de GLA profissional</span></div>
+          <div class="compass" @click="showExperience('compass')" :class="{ 'active': experienceSelected === 'compass' }">
+            <span class="compass-text">Compass</span></div>
+          <div class="gla" @click="showExperience('gla')" :class="{ 'active': experienceSelected === 'gla' }"><span
+              class="gla-text">Jogador de GLA profissional</span></div>
         </div>
       </div>
       <div class="text-experience">
@@ -37,10 +39,11 @@ export default {
         <div class="gla-style" v-else-if="experienceSelected === 'gla'">
           <div class="title">
             <h4 class="title-experience">Grande jogador de gla</h4>
-            <p class="date">Jan 2024 - Atual</p>
+            <p class="date">Jan 2024 - Atual (4 meses)</p>
           </div>
           <a href="https://grandlineadventures.com/pt/" target="_blank" class="company">Grand Line Adventures</a>
-          <p class="detail-experience">dou aula de como jogar gla da melhor maneira possível. Possuo uma gameplay de alto nível </p>
+          <p class="detail-experience">dou aula de como jogar gla da melhor maneira possível. Possuo uma gameplay de
+            alto nível </p>
         </div>
       </div>
     </div>
@@ -58,7 +61,7 @@ export default {
   flex-direction: column;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  gap: 50px;
+  gap: 20px;
 }
 
 .body {
@@ -112,12 +115,19 @@ export default {
 }
 
 .nav-left-bar {
-  height: 112px;
+  height: 110px;
   font-size: 16px;
-  background-color: #0F0F0F;
+  border-style: solid;
+  border-width: 0.5px;
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 0;
+  border-color: #2f66c4;
+  /* background-color: #0F0F0F; */
 }
 
-.compass-text, .gla-text{
+.compass-text,
+.gla-text {
   padding-left: 10px;
   width: 250px;
 }
@@ -139,19 +149,20 @@ export default {
   color: #a6adba
 }
 
-.gla-style, .compass-style {
+.gla-style,
+.compass-style {
   width: 750px;
 }
 
-.compass.active, .gla.active {
+.compass.active,
+.gla.active {
   border-color: #2f66c4;
   color: #2f66c4;
   /* color: #4d6694; */
-  transition: 0.1s;  
+  transition: 0.1s;
   border-style: solid;
   border-bottom: 0;
   border-right: 0;
   border-top: 0;
 }
-
 </style>

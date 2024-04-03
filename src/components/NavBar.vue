@@ -20,9 +20,9 @@ export default {
     <ul class="nav">
       <li><a href="#aboutme" class="nav_text">Sobre</a></li>
       <li><a href="#knowledge" class="nav_text">Conhecimentos</a></li>
+      <li><a href="#experience" class="nav_text">Experiência</a></li>
       <li><a href="" class="nav_text">Educação</a></li>
       <li><a href="" class="nav_text">Projetos</a></li>
-      <li><a href="" class="nav_text">Experiência</a></li>
     </ul>
   </header>
 </template>

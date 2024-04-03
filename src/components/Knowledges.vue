@@ -183,7 +183,7 @@ export default {
 }
 
 .tech_buttons {
-  border-radius: 5px;
+  border-radius: 4px;
   border-style: solid;
   border-width: 1px;
   border-color: #161717;
