@@ -5,9 +5,10 @@ import Footer from '@/components/Footer.vue'
 import Knowledges from '@/components/Knowledges.vue'
 import NavBar from '@/components/NavBar.vue'
 import Experience from '@/components/Experience.vue'
+import Projects from '@/components/Projects.vue'
 
 export default {
-  components: { Header, AboutMe, Footer, Knowledges, NavBar, Experience }
+  components: { Header, AboutMe, Footer, Knowledges, NavBar, Experience, Projects }
 }
 </script>
 
@@ -17,5 +18,6 @@ export default {
   <AboutMe />
   <Knowledges />
   <Experience />
+  <Projects />
   <Footer />
 </template>
