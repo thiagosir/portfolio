@@ -25,7 +25,7 @@ export default {
         <div class="title">
           <h1 class="header">Conhecimentos</h1>
           <p class="desc" id="desc" v-if="message"> {{ message }} </p>
-          <p class="desc" v-else-if="message === ''">Passe o mouse pelas tecnologias ao lado</p>
+          <p class="desc" v-else-if="message === ''">*Passe o mouse pelas tecnologias ao lado*</p>
         </div>
         <div class="tech_div">
           <button class="tech_buttons" id="html_button"
