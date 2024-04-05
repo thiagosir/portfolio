@@ -5,7 +5,7 @@ export default {
   },
   data() {
     return {
-      experienceSelected: 'compass'
+      experienceSelected: 'uninassau'
     }
   },
   methods: {
@@ -16,35 +16,32 @@ export default {
 };
 </script>
 <template>
-  <section id="experience">
+  <section id="education">
     <main class="container">
-      <div class="header">Experiências</div>
+      <div class="header">Educação</div>
       <div class="body">
         <div class="div-left">
           <div class="nav-left-bar">
-            <div class="compass" @click="showExperience('compass')" :class="{ 'active': experienceSelected === 'compass' }">
-              <span class="compass-text">Compass</span></div>
-            <div class="gla" @click="showExperience('gla')" :class="{ 'active': experienceSelected === 'gla' }"><span
-                class="gla-text">Jogador de GLA profissional</span></div>
+            <div class="uninassau" @click="showExperience('uninassau')" :class="{ 'active': experienceSelected === 'uninassau' }">
+              <span class="uninassau-text">UNINASSAU</span></div>
+            <div class="cursos" @click="showExperience('cursos')" :class="{ 'active': experienceSelected === 'cursos' }"><span
+                class="cursos-text">Cursos em geral</span></div>
           </div>
         </div>
         <div class="text-experience">
-          <div class="compass-style" v-if="experienceSelected === 'compass'">
+          <div class="uninassau-style" v-if="experienceSelected === 'uninassau'">
             <div class="title">
-              <h4 class="title-experience">Desenvolvedor de automação de testes</h4>
-              <p class="date">Mar 2022 - Set 2022 (6 meses)</p>
+              <h4 class="title-experience">Bacharelado em Sistemas de Informação</h4>
+              <p class="date">Fev 2019 - Dez 2022 (4 anos)</p>
             </div>
-            <a href="https://compass.uol/pt/home/" target="_blank" class="company">Compass.UOL</a>
-            <p class="detail-experience">Desenvolvi e automatizei testes utilizando o framework Cypress</p>
+            <p class="detail-experience">Centro Universitário Maurício de Nassau - UNINASSAU</p>
           </div>
-          <div class="gla-style" v-else-if="experienceSelected === 'gla'">
+          <div class="cursos-style" v-else-if="experienceSelected === 'cursos'">
             <div class="title">
-              <h4 class="title-experience">Grande jogador de gla</h4>
-              <p class="date">Jan 2024 - Atual (4 meses)</p>
+              <h4 class="title-experience">Cursos</h4>
+              <p class="date">Jan 2023 - Atual (1 ano e 4 meses)</p>
             </div>
-            <a href="https://grandlineadventures.com/pt/" target="_blank" class="company">Grand Line Adventures</a>
-            <p class="detail-experience">dou aula de como jogar gla da melhor maneira possível. Possuo uma gameplay de
-              alto nível </p>
+            <p class="detail-experience">Vários cursos sobre programação nas plataformas da Alura, Udemy, DIO e RocketSeat</p>
           </div>
         </div>
       </div>
@@ -57,13 +54,13 @@ export default {
 .container {
   background-color: #161717;
   width: 100%;
-  height: 400px;
+  height: 350px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  gap: 20px;
+  margin-top: 100px;
 }
 
 .body {
@@ -93,7 +90,8 @@ export default {
 
 .header {
   font-size: 38px;
-  height: 100px;
+  height: 10px;
+  margin-top: 50px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -108,12 +106,21 @@ export default {
   height: 250px;
 }
 
+.title-experience {
+  font-size: large;
+  font-weight: 500;
+}
+
+.detail-experience {
+  color: #6e737d;
+}
+
 .title {
   display: flex;
   width: 750px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: -30px;
 }
 
 .nav-left-bar {
@@ -125,16 +132,15 @@ export default {
   border-right: 0;
   border-top: 0;
   border-color: #2f66c4;
-  /* background-color: #0F0F0F; */
 }
 
-.compass-text,
-.gla-text {
+.uninassau-text,
+.cursos-text {
   padding-left: 10px;
   width: 250px;
 }
 
-.compass {
+.uninassau {
   display: flex;
   align-items: center;
   height: 50px;
@@ -143,7 +149,7 @@ export default {
   color: #a6adba;
 }
 
-.gla {
+.cursos {
   display: flex;
   align-items: center;
   height: 50px;
@@ -151,13 +157,13 @@ export default {
   color: #a6adba
 }
 
-.gla-style,
-.compass-style {
+.cursos-style,
+.uninassau-style {
   width: 750px;
 }
 
-.compass.active,
-.gla.active {
+.uninassau.active,
+.cursos.active {
   border-color: #2f66c4;
   color: #2f66c4;
   /* color: #4d6694; */
