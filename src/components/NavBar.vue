@@ -1,5 +1,10 @@
 <script>
 export default {
+
+
+
+
+  
   mounted() {
     let prevScrollpos = window.scrollY;
     window.onscroll = function () {
