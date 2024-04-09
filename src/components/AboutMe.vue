@@ -69,7 +69,7 @@ export default {
 .main {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .body {

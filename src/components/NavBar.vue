@@ -1,22 +1,22 @@
 <script>
 export default {
-  mounted() {
-    let prevScrollpos = window.scrollY;
-    window.onscroll = function () {
-      if (window.scrollY < 600) {
-        document.getElementById("header_nav").style.top = "0";
-        document.getElementById("header_nav").style.fixed;
-      } else {
-        let currentScrollPos = window.scrollY;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("header_nav").style.top = "-50px";
-        } else {
-          document.getElementById("header_nav").style.top = "0";
-        }
-        prevScrollpos = currentScrollPos;
-      }
-    };
-  },
+  // mounted() {
+  //   let prevScrollpos = window.scrollY;
+  //   window.onscroll = function () {
+  //     if (window.scrollY < 600) {
+  //       document.getElementById("header_nav").style.top = "0";
+  //       document.getElementById("header_nav").style.fixed;
+  //     } else {
+  //       let currentScrollPos = window.scrollY;
+  //       if (prevScrollpos > currentScrollPos) {
+  //         document.getElementById("header_nav").style.top = "-50px";
+  //       } else {
+  //         document.getElementById("header_nav").style.top = "0";
+  //       }
+  //       prevScrollpos = currentScrollPos;
+  //     }
+  //   };
+  // },
 };
 </script>
 

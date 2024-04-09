@@ -52,6 +52,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   display: flex;
+  margin-top: 75px;
 }
 
 .description_words {
@@ -79,6 +80,10 @@ export default {
   margin-right: 500px;
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
   z-index: 1;
+  /* border-radius: 200px;
+  border: solid;
+  border-width: 2px;
+  border-color:  white; */
 }
 
 .description {
