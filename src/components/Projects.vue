@@ -30,14 +30,14 @@ export default {
           <a href="https://github.com/thiagosir/node-lib-md" class="repository">Visualizar projeto</a>
         </article>
         <article class="projects">
-          <h3 class="title">Em desenvolvimento...</h3>
-          <p class="descrip">Aguarde um pouco enquanto desenvolvo mais algum projetinho felas...</p>
-          <a href="github.com/thiagosir" class="repository">Visualizar projeto</a>
+          <h3 class="title">Freeway</h3>
+          <p class="descrip">Joguinho da vaquinha atravessando a rua.</p>
+          <a href="https://github.com/thiagosir/cow_game_js" class="repository">Visualizar projeto</a>
         </article>
         <article class="projects">
-          <h3 class="title">Em desenvolvimento...</h3>
-          <p class="descrip">Aguarde um pouco enquanto desenvolvo mais algum projetinho felas...</p>
-          <a href="github.com/thiagosir" target="_blank" class="repository">Visualizar projeto</a>
+          <h3 class="title">Dev SignIn</h3>
+          <p class="descrip">Projeto realizado com o intuito de aprender a utilizar o Banco de dados MongoDB, e algumas bibliotecas do Nestjs.</p>
+          <a href="https://github.com/thiagosir/devsignin" target="_blank" class="repository">Visualizar projeto</a>
         </article>
       </div>
     </div>

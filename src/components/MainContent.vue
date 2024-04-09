@@ -7,9 +7,10 @@ import NavBar from '@/components/NavBar.vue'
 import Experience from '@/components/Experience.vue'
 import Projects from '@/components/Projects.vue'
 import Education from '@/components/Education.vue'
+import Curriculum from '@/components/Curriculum.vue'
 
 export default {
-  components: { Header, AboutMe, Footer, Knowledges, NavBar, Experience, Projects, Education }
+  components: { Header, AboutMe, Footer, Knowledges, NavBar, Experience, Projects, Education, Curriculum }
 }
 </script>
 
@@ -21,5 +22,6 @@ export default {
   <Experience />
   <Projects />
   <Education />
+  <Curriculum />
   <Footer />
 </template>

@@ -3,13 +3,18 @@ export default {
   mounted() {
     let prevScrollpos = window.scrollY;
     window.onscroll = function () {
-      let currentScrollPos = window.scrollY;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("header_nav").style.top = "-50px";
-      } else {
+      if (window.scrollY < 600) {
         document.getElementById("header_nav").style.top = "0";
+        document.getElementById("header_nav").style.fixed;
+      } else {
+        let currentScrollPos = window.scrollY;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("header_nav").style.top = "-50px";
+        } else {
+          document.getElementById("header_nav").style.top = "0";
+        }
+        prevScrollpos = currentScrollPos;
       }
-      prevScrollpos = currentScrollPos;
     };
   },
 };
@@ -61,7 +66,8 @@ export default {
   width: 100%;
 }
 
-.nav a:hover {
-  /* background-color: aqua; */
+.nav_text:hover {
+  transition: 0.5s;
+  color: rgb(199, 197, 197);
 }
 </style>

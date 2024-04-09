@@ -24,8 +24,8 @@ export default {
           <div class="nav-left-bar">
             <div class="compass" @click="showExperience('compass')" :class="{ 'active': experienceSelected === 'compass' }">
               <span class="compass-text">Compass</span></div>
-            <div class="gla" @click="showExperience('gla')" :class="{ 'active': experienceSelected === 'gla' }"><span
-                class="gla-text">Jogador de GLA profissional</span></div>
+            <div class="freelance" @click="showExperience('freelance')" :class="{ 'active': experienceSelected === 'freelance' }"><span
+                class="freelance-text">Freelancer</span></div>
           </div>
         </div>
         <div class="text-experience">
@@ -35,16 +35,14 @@ export default {
               <p class="date">Mar 2022 - Set 2022 (6 meses)</p>
             </div>
             <a href="https://compass.uol/pt/home/" target="_blank" class="company">Compass.UOL</a>
-            <p class="detail-experience">Desenvolvi e automatizei testes utilizando o framework Cypress</p>
+            <p class="detail-experience">Atuei no desenvolvimento de automação de testes back-end e front-end utilizando a ferramenta Cypress. Também atuei no desenvolvimento de testes manuais na API utilizando o Postman.</p>
           </div>
-          <div class="gla-style" v-else-if="experienceSelected === 'gla'">
+          <div class="freelance-style" v-else-if="experienceSelected === 'freelance'">
             <div class="title">
-              <h4 class="title-experience">Grande jogador de gla</h4>
-              <p class="date">Jan 2024 - Atual (4 meses)</p>
+              <h4 class="title-experience">Comanda digital para restaurantes</h4>
+              <p class="date">Ago 2023 - Atual (8 meses)</p>
             </div>
-            <a href="https://grandlineadventures.com/pt/" target="_blank" class="company">Grand Line Adventures</a>
-            <p class="detail-experience">dou aula de como jogar gla da melhor maneira possível. Possuo uma gameplay de
-              alto nível </p>
+            <p class="detail-experience">Atualmente participo como desenvolvedor back-end utilizando a linguagem Nestjs para o desenvolvimento de uma comanda digital projetada para modernizar e otimizar o processo de pedidos e pagamentos em restaurantes.</p>
           </div>
         </div>
       </div>
@@ -125,11 +123,10 @@ export default {
   border-right: 0;
   border-top: 0;
   border-color: #2f66c4;
-  /* background-color: #0F0F0F; */
 }
 
 .compass-text,
-.gla-text {
+.freelance-text {
   padding-left: 10px;
   width: 250px;
 }
@@ -143,7 +140,7 @@ export default {
   color: #a6adba;
 }
 
-.gla {
+.freelance {
   display: flex;
   align-items: center;
   height: 50px;
@@ -151,16 +148,15 @@ export default {
   color: #a6adba
 }
 
-.gla-style,
+.freelance-style,
 .compass-style {
   width: 750px;
 }
 
 .compass.active,
-.gla.active {
+.freelance.active {
   border-color: #2f66c4;
   color: #2f66c4;
-  /* color: #4d6694; */
   transition: 0.1s;
   border-style: solid;
   border-bottom: 0;

@@ -49,7 +49,6 @@ export default {
 
 <style scoped>
 .header {
-  /* padding-top: 150px; */
   align-items: center;
   justify-content: space-between;
   display: flex;
@@ -64,13 +63,13 @@ export default {
 
 .my_name {
   color: #3f6c98;
-  /* color: #14674f; */
 }
 
 .my_photo {
   border-radius: 200px;
-  border: solid 2px;
-  border-color: #232D3F;
+  border: solid;
+  border-width: 2px;
+  border-color:  white;
   width: 300px;
   height: 300px;
 }
@@ -93,7 +92,6 @@ export default {
   width: 100%;
   height: 700px;
   background: linear-gradient(0, #0F0F0F, #232D3F);
-  /* background: linear-gradient(0, #000000, #006040); */
   overflow: hidden;
   position: relative;
 }
