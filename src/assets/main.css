@@ -5,7 +5,9 @@
   margin: 0;
   font-weight: normal;
 } */
-
+html, body {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #0F0F0F;
   height: 100%;

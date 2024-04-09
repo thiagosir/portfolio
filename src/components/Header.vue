@@ -79,12 +79,14 @@ export default {
   margin-top: 150px;
   margin-right: 500px;
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
+  z-index: 1;
 }
 
 .description {
   margin-top: 150px;
   margin-left: 500px;
   animation: slidein 1s ease-out, fadein 2s ease-out, slidein 1s ease-out;
+  z-index: 1;
 }
 
 .container {
