@@ -32,7 +32,7 @@ export default {
               <span class="dataTitle">Telefone: </span> <span class="dataRes">+55 (88) 981686490</span><br>
               <span class="dataTitle">Localização: </span> <span class="dataRes">Araripina, Pernambuco,
                 Brasil</span><br>
-              <span class="dataTitle">Idiomas: </span> <span class="dataRes">Português, Inglês.</span><br>
+              <span class="dataTitle">Idiomas: </span> <span class="dataRes">Português, Inglês, Espanhol.</span><br>
             </div>
           </div>
         </div>
@@ -69,13 +69,13 @@ export default {
 .main {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 9.375rem;
 }
 
 .body {
   width: 65%;
-  height: 350px;
-  border-radius: 15px;
+  height: 21.875rem;
+  border-radius: .9375rem;
   background-color: #161717;
   display: flex;
   flex-direction: column;
@@ -87,13 +87,13 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .about {
   color: white;
-  width: 500px;
-  margin-right: 100px;
+  width: 31.25rem;
+  margin-right: 6.25rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: slidein 1s ease-out, fadein 2s ease-out;
 }
@@ -102,11 +102,11 @@ export default {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
-  width: 300px;
+  width: 18.75rem;
 }
 
 .socials {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   /* ease-out: Começa rápido e desacelera à medida que a animação progride */
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinBelow 1s ease-out;
 }
@@ -114,7 +114,7 @@ export default {
 @keyframes slidein {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-3.125rem);
   }
 
   to {
@@ -126,7 +126,7 @@ export default {
 @keyframes slideinBelow {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(3.125rem);
   }
 
   to {
@@ -138,7 +138,7 @@ export default {
 @keyframes slideinRight {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(3.125rem);
   }
 
   to {
@@ -164,7 +164,7 @@ export default {
 }
 
 .button {
-  margin: 5px;
+  margin: .3125rem;
 }
 
 .button:hover .svg {
@@ -173,7 +173,7 @@ export default {
 
 .dataTitle,
 .dataRes {
-  line-height: 25px;
+  line-height: 1.5625rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 </style>
