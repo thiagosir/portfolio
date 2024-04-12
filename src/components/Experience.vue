@@ -55,13 +55,13 @@ export default {
 .container {
   background-color: #161717;
   width: 100%;
-  height: 400px;
+  height: 25rem;
   justify-content: center;
   display: flex;
   flex-direction: column;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .body {
@@ -69,7 +69,7 @@ export default {
   align-items: center;
   display: flex;
   color: white;
-  gap: 100px;
+  gap: 6.25rem;
 }
 
 .div-left {
@@ -77,7 +77,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 12.5rem;
 }
 
 .company {
@@ -90,8 +90,8 @@ export default {
 }
 
 .header {
-  font-size: 38px;
-  height: 100px;
+  font-size: 2.375remx;
+  height: 6.25rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -102,23 +102,23 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 750px;
-  height: 250px;
+  width: 46.875rem;
+  height: 15.625rem;
 }
 
 .title {
   display: flex;
-  width: 750px;
+  width: 46.875rem;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .nav-left-bar {
-  height: 110px;
-  font-size: 16px;
+  height: 6.875rem;
+  font-size: 1rem;
   border-style: solid;
-  border-width: 0.5px;
+  border-width: .0313rem;
   border-bottom: 0;
   border-right: 0;
   border-top: 0;
@@ -127,30 +127,30 @@ export default {
 
 .compass-text,
 .freelance-text {
-  padding-left: 10px;
-  width: 250px;
+  padding-left: .625rem;
+  width: 15.625rem;
 }
 
 .compass {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 3.125rem;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
   color: #a6adba;
 }
 
 .freelance {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 3.125rem;
   cursor: pointer;
   color: #a6adba
 }
 
 .freelance-style,
 .compass-style {
-  width: 750px;
+  width: 46.875rem;
 }
 
 .compass.active,

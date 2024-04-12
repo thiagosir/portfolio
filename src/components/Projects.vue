@@ -47,13 +47,13 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  height: 600px;
+  height: 37.5rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   display: flex;
   color: white;
-  gap: 20px;
+  gap: 1.25rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -63,36 +63,36 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   width: 70%;
-  height: 400px;
-  gap: 20px;
+  height: 25rem;
+  gap: 1.25rem;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
-  height: 190px;
+  width: 21.875rem;
+  height: 11.875rem;
   border-style: solid;
-  border-width: 1px;
+  border-width: .0625rem;
   border-color: #4d6694;
-  border-radius: 5px;
+  border-radius: .3125rem;
 }
 
 .projects:hover {
   transition: 1s;
-  box-shadow: 8px 7px 10px #4d6694;
+  box-shadow: .5rem .4375rem .625rem #4d6694;
 }
 
 .descrip {
-  width: 290px;
-  height: 64px;
-  font-size: 15px;
+  width: 18.125rem;
+  height: 4rem;
+  font-size: .9375rem;
   color: #6e737d;
 }
 
 .title-project {
-  font-size: 38px;
+  font-size: 2.375rem;
 }
 
 .repository {
@@ -104,10 +104,10 @@ export default {
 .repository::before {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -0.125rem;
   left: 0;
   width: 0;
-  height: 1px;
+  height: .0625rem;
   background: linear-gradient(to right, #000000, #5b8dea);
   transition: width 0.3s ease;
 }

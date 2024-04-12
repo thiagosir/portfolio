@@ -52,14 +52,14 @@ export default {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  margin-top: 75px;
+  margin-top: 4.6875rem;
 }
 
 .description_words {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 400;
-  font-size: 33px;
+  font-size: 2.0625rem;
 }
 
 .my_name {
@@ -67,17 +67,17 @@ export default {
 }
 
 .my_photo {
-  border-radius: 200px;
+  border-radius: 12.5rem;
   border: solid;
-  border-width: 2px;
+  border-width: .125rem;
   border-color:  white;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
 }
 
 .image {
-  margin-top: 150px;
-  margin-right: 500px;
+  margin-top: 9.375rem;
+  margin-right: 31.25rem;
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
   z-index: 1;
   /* border-radius: 200px;
@@ -87,23 +87,23 @@ export default {
 }
 
 .description {
-  margin-top: 150px;
-  margin-left: 500px;
+  margin-top: 9.375rem;
+  margin-left: 31.25rem;
   animation: slidein 1s ease-out, fadein 2s ease-out, slidein 1s ease-out;
   z-index: 1;
 }
 
 .container {
   width: 100%;
-  height: 700px;
+  height: 43.75rem;
   background: linear-gradient(0, #0F0F0F, #232D3F);
   overflow: hidden;
   position: relative;
 }
 
 .star {
-  width: 3px;
-  height: 3px;
+  width: .1875rem;
+  height: .1875rem;
   position: absolute;
   border-radius: 50%;
   background-color: white;
@@ -112,7 +112,7 @@ export default {
 @keyframes slidein {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-3.125rem);
   }
 
   to {
@@ -124,7 +124,7 @@ export default {
 @keyframes slideinBelow {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(3.125rem);
   }
 
   to {
@@ -136,7 +136,7 @@ export default {
 @keyframes slideinRight {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(3.125rem);
   }
 
   to {

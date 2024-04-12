@@ -15,11 +15,11 @@ export default {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 100px;
+  height: 6.25rem;
 }
 
 .text {
   color: white;
-  font-size: 12px;
+  font-size: .75rem;
 }
 </style>

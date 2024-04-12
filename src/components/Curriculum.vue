@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 15.625rem;
   width: 100%;
 }
 
@@ -33,10 +33,10 @@
 
   background-color: #6197f4;
   border-style: none;
-  border-radius: 5px;
+  border-radius: .3125rem;
 
-  width: 180px;
-  height: 60px;
+  width: 11.25rem;
+  height: 3.75rem;
 }
 
 .curriculum:hover {
@@ -45,9 +45,9 @@
 }
 
 .text {
-  margin-right: 5px;
+  margin-right: .3125rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
   color: black;
 }

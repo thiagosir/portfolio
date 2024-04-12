@@ -39,7 +39,7 @@ export default {
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 50px;
+  height: 3.125rem;
   top: 0;
   position: fixed;
   width: 100%;
@@ -50,7 +50,7 @@ export default {
 
 .nav_text {
   display: block;
-  padding: 8px;
+  padding: .5rem;
   text-decoration: none;
   color: white;
 }
@@ -62,7 +62,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
   width: 100%;
 }
 

@@ -54,13 +54,13 @@ export default {
 .container {
   background-color: #161717;
   width: 100%;
-  height: 350px;
+  height: 21.875rem;
   justify-content: center;
   display: flex;
   flex-direction: column;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 .body {
@@ -68,7 +68,7 @@ export default {
   align-items: center;
   display: flex;
   color: white;
-  gap: 100px;
+  gap: 6.25rem;
 }
 
 .div-left {
@@ -76,7 +76,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 12.5rem;
 }
 
 .company {
@@ -89,9 +89,9 @@ export default {
 }
 
 .header {
-  font-size: 38px;
-  height: 10px;
-  margin-top: 50px;
+  font-size: 2.375rem;
+  height: .625rem;
+  margin-top: 3.125rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -102,8 +102,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 750px;
-  height: 250px;
+  width: 46.875rem;
+  height: 15.625rem;
 }
 
 .title-experience {
@@ -117,17 +117,17 @@ export default {
 
 .title {
   display: flex;
-  width: 750px;
+  width: 46.875rem;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: -30px;
+  margin-bottom: -1.875rem;
 }
 
 .nav-left-bar {
-  height: 110px;
-  font-size: 16px;
+  height: 6.875rem;
+  font-size: 1rem;
   border-style: solid;
-  border-width: 0.5px;
+  border-width: .0313rem;
   border-bottom: 0;
   border-right: 0;
   border-top: 0;
@@ -136,37 +136,36 @@ export default {
 
 .uninassau-text,
 .cursos-text {
-  padding-left: 10px;
-  width: 250px;
+  padding-left: .625rem;
+  width: 15.625rem;
 }
 
 .uninassau {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 3.125rem;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
   color: #a6adba;
 }
 
 .cursos {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 3.125rem;
   cursor: pointer;
   color: #a6adba
 }
 
 .cursos-style,
 .uninassau-style {
-  width: 750px;
+  width: 46.875rem;
 }
 
 .uninassau.active,
 .cursos.active {
   border-color: #2f66c4;
   color: #2f66c4;
-  /* color: #4d6694; */
   transition: 0.1s;
   border-style: solid;
   border-bottom: 0;

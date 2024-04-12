@@ -164,35 +164,35 @@ export default {
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 150px;
-  height: 500px;
+  gap: 9.375rem;
+  height: 31.25rem;
   width: 100%;
-  margin-top: -100px;
+  margin-top: -6.25rem;
 }
 
 .title {
-  padding-bottom: 120px;
-  width: 300px;
+  padding-bottom: 7.5rem;
+  width: 18.75rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
 }
 
 .desc {
-  height: 100px;
-  width: 250px;
-  font-size: 13px;
+  height: 6.25rem;
+  width: 15.625rem;
+  font-size: .8125rem;
   color: white;
 }
 
 .tech_buttons {
-  border-radius: 4px;
+  border-radius: .25rem;
   border-style: solid;
-  border-width: 1px;
+  border-width: .0625rem;
   border-color: #161717;
   background-color: #161717;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   margin: 0;
   padding: 0;
 }
@@ -205,18 +205,17 @@ export default {
 .tech_div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  height: 300px;
+  gap: .9375rem;
+  height: 18.75rem;
 }
 
 .knowledge {
-  margin-top: 100px;
+  margin-top: 6.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: -100px; */
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
 }
 
 .header {
