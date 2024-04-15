@@ -176,4 +176,24 @@ export default {
   line-height: 1.5625rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin-top: 5rem; /* Ajustando a margem superior para telas menores */
+  }
+
+  .body {
+    padding: 10px; /* Reduzindo o padding para telas menores */
+  }
+
+  .top-section {
+    text-align: center; /* Centralizando o texto */
+  }
+
+  .socials {
+    flex-direction: column; /* Colocando os botões um embaixo do outro */
+    align-items: center; /* Centralizando os botões */
+  }
+}
+
 </style>

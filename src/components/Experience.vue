@@ -90,7 +90,7 @@ export default {
 }
 
 .header {
-  font-size: 2.375remx;
+  font-size: 2.375rem;
   height: 6.25rem;
   width: 100%;
   display: flex;
