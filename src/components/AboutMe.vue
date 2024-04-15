@@ -13,7 +13,7 @@ export default {
         <div class="top-section">
           <div class="about">
             <h1 class="title">Sobre mim</h1>
-            <p>
+            <span>
               Olá! Sou um entusiasta da tecnologia com um bacharelado em Sistemas de Informação, experiência em QA
               Automation
               e estou desenvolvendo meus conhecimentos em Vue e Laravel. Estou sempre buscando aprender novas linguagens
@@ -22,7 +22,7 @@ export default {
               tecnologia.
               Estou aberto a novas oportunidades e desafios que possam me permitir aplicar e expandir minhas
               habilidades.
-            </p>
+            </span>
           </div>
           <div class="information">
             <h1 class="title">Informações</h1>
@@ -38,26 +38,23 @@ export default {
         </div>
         <div class="socials">
           <a href="https://github.com/thiagosir" class="button" target="_blank">
-            <svg width="30px" height="30px" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" fill="white" class="svg"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg width="30px" height="30px" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" fill="white"
+              class="svg" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5" />
             </svg>
           </a>
           <a href="https://www.linkedin.com/in/thiago-couto-b95635243/" class="button" target="_blank">
-            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" class="svg">
-            <path
-              d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
-               />
-            <path
-              d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
-               />
-            <path
-              d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
-               />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
-               />
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"
+              class="svg">
+              <path
+                d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" />
+              <path
+                d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" />
+              <path
+                d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" />
             </svg>
           </a>
         </div>
@@ -73,14 +70,16 @@ export default {
 }
 
 .body {
-  width: 65%;
-  height: 21.875rem;
+  margin: 0 20rem 0 20rem;
+  width: 100%;
+  height: auto;
   border-radius: .9375rem;
   background-color: #161717;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem 5rem;
 }
 
 .top-section {
@@ -92,17 +91,18 @@ export default {
 
 .about {
   color: white;
-  width: 31.25rem;
-  margin-right: 6.25rem;
+  width: 65%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: slidein 1s ease-out, fadein 2s ease-out;
+  height: auto;
 }
 
 .information {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
-  width: 18.75rem;
+  width: 35%;
+  height: auto;
 }
 
 .socials {
@@ -179,21 +179,36 @@ export default {
 
 @media screen and (max-width: 768px) {
   .main {
-    margin-top: 5rem; /* Ajustando a margem superior para telas menores */
+    justify-content: center;
+    align-items: center;
   }
 
   .body {
-    padding: 10px; /* Reduzindo o padding para telas menores */
+    margin: 0 1rem 0 1rem;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
   }
 
   .top-section {
-    text-align: center; /* Centralizando o texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .socials {
-    flex-direction: column; /* Colocando os botões um embaixo do outro */
-    align-items: center; /* Centralizando os botões */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    width: 100%;
+  }
+  
+  .information {
+    width: 100%;
   }
 }
-
 </style>
