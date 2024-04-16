@@ -80,10 +80,6 @@ export default {
   margin-right: 31.25rem;
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
   z-index: 1;
-  /* border-radius: 200px;
-  border: solid;
-  border-width: 2px;
-  border-color:  white; */
 }
 
 .description {
@@ -154,4 +150,10 @@ export default {
     opacity: 1;
   }
 }
+@media screen and (max-width: 768px) {
+  .container{
+    
+  }
+}
+
 </style>
