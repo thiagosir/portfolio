@@ -50,9 +50,10 @@ export default {
 <style scoped>
 .header {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
-  margin-top: 4.6875rem;
+  margin-top: 12rem;
+  gap: 10rem;
 }
 
 .description_words {
@@ -76,15 +77,16 @@ export default {
 }
 
 .image {
-  margin-top: 9.375rem;
-  margin-right: 31.25rem;
+  /* margin-top: 9.375rem;
+  margin-right: 31.25rem; */
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
   z-index: 1;
+  /* padding-left: 10rem; */
 }
 
 .description {
-  margin-top: 9.375rem;
-  margin-left: 31.25rem;
+  /* margin-top: 9.375rem;
+  margin-left: 31.25rem; */
   animation: slidein 1s ease-out, fadein 2s ease-out, slidein 1s ease-out;
   z-index: 1;
 }
@@ -110,7 +112,7 @@ export default {
     opacity: 0;
     transform: translateX(-3.125rem);
   }
-
+  
   to {
     opacity: 1;
     transform: translateX(0);
@@ -122,7 +124,7 @@ export default {
     opacity: 0;
     transform: translateY(3.125rem);
   }
-
+  
   to {
     opacity: 1;
     transform: translateY(0);
@@ -134,7 +136,7 @@ export default {
     opacity: 0;
     transform: translateX(3.125rem);
   }
-
+  
   to {
     opacity: 1;
     transform: translateX(0);
@@ -145,14 +147,40 @@ export default {
   from {
     opacity: 0;
   }
-
+  
   to {
     opacity: 1;
   }
 }
 @media screen and (max-width: 768px) {
   .container{
-    
+    width: 100%;
+    margin-bottom: -10rem;
+  }
+  .image {
+    margin-top: 5rem;
+    animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
+    z-index: 1;
+  }
+  
+  .description {
+    animation: slidein 1s ease-out, fadein 2s ease-out, slidein 1s ease-out;
+    z-index: 1;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1rem;
+  }
+  .description_words {
+    font-size: 1.2rem;
+  }
+  .my_photo {
+    width: 10.75rem;
+    height: 10.75rem;
   }
 }
 
