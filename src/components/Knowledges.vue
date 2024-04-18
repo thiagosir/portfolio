@@ -164,22 +164,22 @@ export default {
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 9.375rem;
-  height: 31.25rem;
+  /* gap: 9.375rem; */
+  /* height: 31.25rem; */
   width: 100%;
   margin-top: -6.25rem;
 }
 
 .title {
   padding-bottom: 7.5rem;
-  width: 18.75rem;
+  /* width: 18.75rem; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
 }
 
 .desc {
-  height: 6.25rem;
-  width: 15.625rem;
+  /* height: 6.25rem; */
+  /* width: 15.625rem; */
   font-size: .8125rem;
   color: white;
 }
@@ -191,8 +191,8 @@ export default {
   border-color: #161717;
   background-color: #161717;
   cursor: pointer;
-  width: 6.25rem;
-  height: 6.25rem;
+  /* width: 6.25rem; */
+  /* height: 6.25rem; */
   margin: 0;
   padding: 0;
 }
@@ -221,5 +221,17 @@ export default {
 .header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .knowledge{
+  }
+  .body_knowledges {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+  }
 }
 </style>

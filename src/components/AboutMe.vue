@@ -70,7 +70,7 @@ export default {
 }
 
 .body {
-  margin: 0 20rem 0 20rem;
+  margin: 0 18rem 0 18rem;
   width: 100%;
   height: auto;
   border-radius: .9375rem;

@@ -22,6 +22,7 @@ export default {
 
 <template>
   <header class="header_nav" id="header_nav">
+    <a href="" class="menu">Menu</a>
     <ul class="nav">
       <li><a href="#aboutme" class="nav_text">Sobre</a></li>
       <li><a href="#knowledge" class="nav_text">Conhecimentos</a></li>
@@ -69,5 +70,26 @@ export default {
 .nav_text:hover {
   transition: 0.5s;
   color: rgb(199, 197, 197);
+}
+
+.menu {
+  display: none
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menu {
+    /* justify-content: end; */
+    display: flex;
+    /* position: absolute; */
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+  }
+
 }
 </style>

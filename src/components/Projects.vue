@@ -47,7 +47,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  height: 37.5rem;
+  height: auto;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -62,8 +62,8 @@ export default {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 70%;
-  height: 25rem;
+  /* width: 70%; */
+  height: auto;
   gap: 1.25rem;
 }
 

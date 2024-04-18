@@ -102,7 +102,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 46.875rem;
+  /* width: 46.875rem; */
   height: 15.625rem;
 }
 
@@ -117,7 +117,7 @@ export default {
 
 .title {
   display: flex;
-  width: 46.875rem;
+  /* width: 46.875rem; */
   align-items: center;
   justify-content: space-between;
   margin-bottom: -1.875rem;
@@ -137,7 +137,7 @@ export default {
 .uninassau-text,
 .cursos-text {
   padding-left: .625rem;
-  width: 15.625rem;
+  /* width: 15.625rem; */
 }
 
 .uninassau {
@@ -159,7 +159,7 @@ export default {
 
 .cursos-style,
 .uninassau-style {
-  width: 46.875rem;
+  /* width: 46.875rem; */
 }
 
 .uninassau.active,

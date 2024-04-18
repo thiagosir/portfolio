@@ -77,7 +77,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 12.5rem;
+  /* width: 12.5rem; */
 }
 
 .company {
@@ -102,13 +102,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 46.875rem;
+  /* width: 46.875rem; */
   height: 15.625rem;
 }
 
 .title {
   display: flex;
-  width: 46.875rem;
+  /* width: 46.875rem; */
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.25rem;
@@ -128,7 +128,7 @@ export default {
 .compass-text,
 .freelance-text {
   padding-left: .625rem;
-  width: 15.625rem;
+  /* width: 15.625rem; */
 }
 
 .compass {
@@ -150,7 +150,7 @@ export default {
 
 .freelance-style,
 .compass-style {
-  width: 46.875rem;
+  /* width: 46.875rem; */
 }
 
 .compass.active,
