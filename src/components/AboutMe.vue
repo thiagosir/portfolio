@@ -86,7 +86,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 2.5rem;
+  gap: 2.55rem;
 }
 
 .about {
@@ -201,6 +201,8 @@ export default {
   .socials {
     flex-direction: column;
     align-items: center;
+
+
   }
 
   .about {
