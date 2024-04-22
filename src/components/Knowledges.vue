@@ -79,8 +79,8 @@ export default {
           <button class="tech_buttons" id="php_button"
             @mouseover="showMessage('PHP é uma linguagem de programação de script do lado do servidor usada principalmente para desenvolvimento web.')"
             @mouseout="removeMessage">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px"
-              height="50px" fill="#334361" viewBox="0 0 512 512">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="50px" height="50px" fill="#334361" viewBox="0 0 512 512">
               <path display="inline" d="M171.844,204.374c-11.137-12.748-28.856-19.123-53.146-19.123H37.96L0.5,377.99h41.984l9.96-51.241
       h35.963c15.869,0,28.923-1.663,39.173-5.003c10.247-3.33,19.562-8.92,27.945-16.767c7.037-6.467,12.725-13.599,17.087-21.4
       c4.354-7.797,7.448-16.401,9.278-25.812C186.333,234.919,182.98,217.124,171.844,204.374z M138.493,254.823
@@ -137,7 +137,7 @@ export default {
             @mouseout="removeMessage">
             <svg width="50px" height="50px" fill="#334361" version="1.1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
-  
+
               <path d="M482.585,147.869v216.113c0,14.025-7.546,27.084-19.672,34.143L275.665,506.241c-5.989,3.474-12.782,5.259-19.719,5.259c-6.838,0-13.649-1.785-19.639-5.259l-62.521-36.99c-9.326-5.207-4.775-7.059-1.692-8.128c12.454-4.322,14.973-5.318,28.268-12.863c1.387-0.793,3.216-0.483,4.647,0.343l48.031,28.519c1.741,0.981,4.2,0.981,5.801,0l187.263-108.086c1.744-0.996,2.862-2.983,2.862-5.053V147.869c0-2.117-1.118-4.094-2.906-5.163L258.874,34.716
       c-1.726-1.01-4.03-1.01-5.768,0L65.962,142.736c-1.818,1.04-2.965,3.079-2.965,5.133v216.113c0,2.069,1.146,4.009,2.954,4.99
       l51.299,29.654c27.829,13.903,44.875-2.485,44.875-18.956V166.309c0-3.017,2.423-5.396,5.439-5.396h23.747
@@ -164,22 +164,27 @@ export default {
   align-items: center;
   display: flex;
   flex-direction: row;
-  /* gap: 9.375rem; */
-  /* height: 31.25rem; */
   width: 100%;
-  margin-top: -6.25rem;
+}
+
+.knowledge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 31.25rem;
 }
 
 .title {
   padding-bottom: 7.5rem;
-  /* width: 18.75rem; */
+  width: 20%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
 }
 
 .desc {
-  /* height: 6.25rem; */
-  /* width: 15.625rem; */
+  height: 6rem;
+  width: 60%;
   font-size: .8125rem;
   color: white;
 }
@@ -191,8 +196,8 @@ export default {
   border-color: #161717;
   background-color: #161717;
   cursor: pointer;
-  /* width: 6.25rem; */
-  /* height: 6.25rem; */
+  width: 6.25rem;
+  height: 6.25rem;
   margin: 0;
   padding: 0;
 }
@@ -206,32 +211,65 @@ export default {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: .9375rem;
-  height: 18.75rem;
+  width: 20%;
+  height: auto;
 }
 
-.knowledge {
-  margin-top: 6.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 31.25rem;
-}
 
 .header {
+  height: 3rem;
+  font-size: 2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
-  .knowledge{
+  .knowledge {
+    padding: 1rem 0 1rem 0;
   }
+  
   .body_knowledges {
     height: auto;
     display: flex;
     flex-direction: column;
-    /* margin-top: 1rem;
-    margin-bottom: 1rem; */
+  }
+  
+  .title {
+    padding: 0;
+  }
+  
+  .desc {
+    display: none;
+  }
+
+  .tech_buttons {
+    border-radius: .25rem;
+    border-style: solid;
+    border-width: .0625rem;
+    border-color: #161717;
+    background-color: #161717;
+    cursor: pointer;
+    width: 100%;
+    height: 5rem;
+    /* margin: 0;
+    padding: 0; */
+  }
+  
+  .tech_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .9375rem;
+    width: 70%;
+    height: auto;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 7.5rem; */
+    width: 60%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
   }
 }
 </style>
