@@ -22,10 +22,15 @@ export default {
       <div class="body">
         <div class="div-left">
           <div class="nav-left-bar">
-            <div class="compass" @click="showExperience('compass')" :class="{ 'active': experienceSelected === 'compass' }">
-              <span class="compass-text">Compass</span></div>
-            <div class="freelance" @click="showExperience('freelance')" :class="{ 'active': experienceSelected === 'freelance' }"><span
-                class="freelance-text">Freelancer</span></div>
+            <div class="compass" @click="showExperience('compass')"
+              :class="{ 'active': experienceSelected === 'compass' }">
+              <span class="compass-text">Compass</span>
+            </div>
+            <div class="freelance" @click="showExperience('freelance')"
+              :class="{ 'active': experienceSelected === 'freelance' }">
+              <span class="freelance-text">Freelancer
+              </span>
+            </div>
           </div>
         </div>
         <div class="text-experience">
@@ -35,14 +40,17 @@ export default {
               <p class="date">Mar 2022 - Set 2022 (6 meses)</p>
             </div>
             <a href="https://compass.uol/pt/home/" target="_blank" class="company">Compass.UOL</a>
-            <p class="detail-experience">Atuei no desenvolvimento de automação de testes back-end e front-end utilizando a ferramenta Cypress. Também atuei no desenvolvimento de testes manuais na API utilizando o Postman.</p>
+            <p class="detail-experience">Atuei no desenvolvimento de automação de testes back-end e front-end utilizando
+              a ferramenta Cypress. Também atuei no desenvolvimento de testes manuais na API utilizando o Postman.</p>
           </div>
           <div class="freelance-style" v-else-if="experienceSelected === 'freelance'">
             <div class="title">
               <h4 class="title-experience">Comanda digital para restaurantes</h4>
               <p class="date">Ago 2023 - Atual (8 meses)</p>
             </div>
-            <p class="detail-experience">Atualmente participo como desenvolvedor back-end utilizando a linguagem Nestjs para o desenvolvimento de uma comanda digital projetada para modernizar e otimizar o processo de pedidos e pagamentos em restaurantes.</p>
+            <p class="detail-experience">Atualmente participo como desenvolvedor back-end utilizando a linguagem Nestjs
+              para o desenvolvimento de uma comanda digital projetada para modernizar e otimizar o processo de pedidos e
+              pagamentos em restaurantes.</p>
           </div>
         </div>
       </div>
@@ -55,13 +63,14 @@ export default {
 .container {
   background-color: #161717;
   width: 100%;
-  height: 25rem;
+  height: auto;
   justify-content: center;
   display: flex;
   flex-direction: column;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   gap: 1.25rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .body {
@@ -69,7 +78,7 @@ export default {
   align-items: center;
   display: flex;
   color: white;
-  gap: 6.25rem;
+  gap: 1.25rem;
 }
 
 .div-left {
@@ -77,7 +86,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 12.5rem; */
 }
 
 .company {
@@ -102,20 +110,19 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 46.875rem; */
+  width: 70%;
   height: 15.625rem;
 }
 
 .title {
   display: flex;
-  /* width: 46.875rem; */
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.25rem;
 }
 
 .nav-left-bar {
   height: 6.875rem;
+  width: 100%;
   font-size: 1rem;
   border-style: solid;
   border-width: .0313rem;
@@ -128,7 +135,6 @@ export default {
 .compass-text,
 .freelance-text {
   padding-left: .625rem;
-  /* width: 15.625rem; */
 }
 
 .compass {
@@ -150,7 +156,7 @@ export default {
 
 .freelance-style,
 .compass-style {
-  /* width: 46.875rem; */
+  width: 90%;
 }
 
 .compass.active,
@@ -162,5 +168,34 @@ export default {
   border-bottom: 0;
   border-right: 0;
   border-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 80%;
+    
+    background-color: #0f0e0e;
+  }
+
+  .text-experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 15.625rem;
+  }
 }
 </style>

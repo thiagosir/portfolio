@@ -54,12 +54,14 @@ export default {
 .container {
   background-color: #161717;
   width: 100%;
-  height: 21.875rem;
+  height: auto;
   justify-content: center;
   display: flex;
   flex-direction: column;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  gap: 1.25rem;
+  padding: 1rem 0 1rem 0;
   margin-top: 6.25rem;
 }
 
@@ -68,7 +70,7 @@ export default {
   align-items: center;
   display: flex;
   color: white;
-  gap: 6.25rem;
+  /* gap: 1.25rem; */
 }
 
 .div-left {
@@ -76,7 +78,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 12.5rem;
 }
 
 .company {
@@ -90,8 +91,7 @@ export default {
 
 .header {
   font-size: 2.375rem;
-  height: .625rem;
-  margin-top: 3.125rem;
+  height: 6.25rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -102,8 +102,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 46.875rem; */
-  height: 15.625rem;
+  width: 50%;
+  height: 12.625rem;
 }
 
 .title-experience {
@@ -117,14 +117,13 @@ export default {
 
 .title {
   display: flex;
-  /* width: 46.875rem; */
   align-items: center;
   justify-content: space-between;
-  margin-bottom: -1.875rem;
 }
 
 .nav-left-bar {
   height: 6.875rem;
+  width: 100%;
   font-size: 1rem;
   border-style: solid;
   border-width: .0313rem;
@@ -137,7 +136,6 @@ export default {
 .uninassau-text,
 .cursos-text {
   padding-left: .625rem;
-  /* width: 15.625rem; */
 }
 
 .uninassau {
@@ -159,7 +157,7 @@ export default {
 
 .cursos-style,
 .uninassau-style {
-  /* width: 46.875rem; */
+  width: 90%;
 }
 
 .uninassau.active,
@@ -171,5 +169,34 @@ export default {
   border-bottom: 0;
   border-right: 0;
   border-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 80%;
+    
+    background-color: #0f0e0e;
+  }
+
+  .text-experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 15.625rem;
+  }
 }
 </style>
