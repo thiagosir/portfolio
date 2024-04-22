@@ -165,6 +165,9 @@ export default {
   display: flex;
   flex-direction: row;
   width: 100%;
+  gap: 3rem;
+  /* background-color: #4d6694; */
+  /* margin: 18rem; */
 }
 
 .knowledge {
@@ -172,7 +175,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 31.25rem;
+  height: 38.25rem;
 }
 
 .title {
@@ -232,6 +235,7 @@ export default {
     height: auto;
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
   
   .title {
