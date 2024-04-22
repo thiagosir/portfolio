@@ -19,6 +19,7 @@ export default {
 }
 
 .text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   font-size: .75rem;
 }
