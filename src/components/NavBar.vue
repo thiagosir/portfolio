@@ -23,6 +23,7 @@ export default {
 <template>
   <header class="header_nav" id="header_nav">
     <a href="" class="menu">Menu</a>
+    <!-- <img src="/src/assets/images/Icons/logo.svg" alt="Logo do site" class="img"> -->
     <ul class="nav">
       <li><a href="#aboutme" class="nav_text">Sobre</a></li>
       <li><a href="#knowledge" class="nav_text">Conhecimentos</a></li>

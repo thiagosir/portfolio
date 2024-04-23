@@ -12,27 +12,27 @@ export default {
         <article class="projects">
           <h3 class="title">CookinUp!</h3>
           <p class="descrip">Projeto com intuito de aprenziado, onde uso vários métodos que o Vuejs disponibiliza.</p>
-          <a href="https://github.com/thiagosir/cookin-up" class="repository">Visualizar projeto</a>
+          <a href="https://github.com/thiagosir/cookin-up" target="_blank" class="repository">Visualizar projeto</a>
         </article>
         <article class="projects">
           <h3 class="title">TrackerApp</h3>
           <p class="descrip">Projeto que permite a organização de seus projetos e tarefas do dia a dia. Também feito em Vuejs</p>
-          <a href="https://github.com/thiagosir/tracker_vue" class="repository">Visualizar projeto</a>
+          <a href="https://github.com/thiagosir/tracker_vue" target="_blank" class="repository">Visualizar projeto</a>
         </article>
         <article class="projects">
           <h3 class="title">Automação de testes</h3>
           <p class="descrip">Projeto feito em Cypress para automatizar os testes da api ServeRest.</p>
-          <a href="https://github.com/thiagosir/Automacao_Cypress_API_ServeRest" class="repository">Visualizar projeto</a>
+          <a href="https://github.com/thiagosir/Automacao_Cypress_API_ServeRest" target="_blank" class="repository">Visualizar projeto</a>
         </article>
         <article class="projects">
           <h3 class="title">Node Lib</h3>
           <p class="descrip">Biblioteca em node que permite verificar quais textos e retornar links (se existirem no texto). Projeto feito em node.</p>
-          <a href="https://github.com/thiagosir/node-lib-md" class="repository">Visualizar projeto</a>
+          <a href="https://github.com/thiagosir/node-lib-md" target="_blank" class="repository">Visualizar projeto</a>
         </article>
         <article class="projects">
           <h3 class="title">Freeway</h3>
           <p class="descrip">Joguinho da vaquinha atravessando a rua.</p>
-          <a href="https://github.com/thiagosir/cow_game_js" class="repository">Visualizar projeto</a>
+          <a href="https://github.com/thiagosir/cow_game_js" target="_blank" class="repository">Visualizar projeto</a>
         </article>
         <article class="projects">
           <h3 class="title">Dev SignIn</h3>
