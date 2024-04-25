@@ -1,29 +1,15 @@
 <script>
 export default {
-  // mounted() {
-  //   let prevScrollpos = window.scrollY;
-  //   window.onscroll = function () {
-  //     if (window.scrollY < 600) {
-  //       document.getElementById("header_nav").style.top = "0";
-  //       document.getElementById("header_nav").style.fixed;
-  //     } else {
-  //       let currentScrollPos = window.scrollY;
-  //       if (prevScrollpos > currentScrollPos) {
-  //         document.getElementById("header_nav").style.top = "-50px";
-  //       } else {
-  //         document.getElementById("header_nav").style.top = "0";
-  //       }
-  //       prevScrollpos = currentScrollPos;
-  //     }
-  //   };
-  // },
+
 };
 </script>
 
 <template>
   <header class="header_nav" id="header_nav">
-    <a href="" class="menu">Menu</a>
-    <img src="/src/assets/images/Icons/logo.svg" alt="Logo do site" class="img">
+    <div class="scope">
+      <img src="/src/assets/images/Icons/logo.svg" alt="Logo do site" class="img">
+      <a href="" class="menu">Menu</a>
+    </div>
     <ul class="nav">
       <li><a href="#aboutme" class="nav_text">Sobre</a></li>
       <li><a href="#knowledge" class="nav_text">Conhecimentos</a></li>
@@ -82,15 +68,35 @@ export default {
     display: none;
   }
 
+  .header_nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #232D3F;
+    align-items: center;
+    height: 3.125rem;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1;
+  }
+
+  .img {
+    width: 100%;
+  }
+  
   .menu {
-    /* justify-content: end; */
-    display: flex;
-    /* position: absolute; */
-    cursor: pointer;
+    display: block;
     text-decoration: none;
     list-style-type: none;
     color: white;
+    width: 100%;
   }
 
+  .scope {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 15rem; */
+  }
 }
 </style>
