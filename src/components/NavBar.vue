@@ -8,6 +8,8 @@ export default {
   <header class="header_nav" id="header_nav">
     <div class="scope">
       <img src="/src/assets/images/Icons/logo.svg" alt="Logo do site" class="img">
+    </div>
+    <div class="menu-style">
       <a href="" class="menu">Menu</a>
     </div>
     <ul class="nav">
@@ -35,7 +37,6 @@ export default {
   z-index: 1;
 }
 
-
 .nav_text {
   display: block;
   padding: .5rem;
@@ -52,6 +53,10 @@ export default {
   align-items: center;
   gap: 1.875rem;
   width: 100%;
+}
+
+.img {
+  padding: 1rem;
 }
 
 .nav_text:hover {
@@ -78,25 +83,21 @@ export default {
     width: 100%;
     transition: top 0.3s;
     z-index: 1;
+    justify-content: space-between;
   }
 
   .img {
-    width: 100%;
+    margin: .5rem;
   }
-  
+
   .menu {
     display: block;
     text-decoration: none;
     list-style-type: none;
     color: white;
+    margin: 1rem;
     width: 100%;
   }
 
-  .scope {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 15rem; */
-  }
 }
 </style>
