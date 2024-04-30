@@ -276,4 +276,55 @@ export default {
     color: white;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .knowledge {
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .body_knowledges {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .title {
+    padding: 0;
+  }
+  
+  .desc {
+    display: none;
+  }
+
+  .tech_buttons {
+    border-radius: .25rem;
+    border-style: solid;
+    border-width: .0625rem;
+    border-color: #161717;
+    background-color: #161717;
+    cursor: pointer;
+    width: 100%;
+    height: 5rem;
+    /* margin: 0;
+    padding: 0; */
+  }
+  
+  .tech_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .9375rem;
+    width: 70%;
+    height: auto;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 7.5rem; */
+    width: 60%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+  }
+}
 </style>

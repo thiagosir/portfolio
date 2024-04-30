@@ -213,4 +213,41 @@ export default {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .body {
+    margin: 0 1rem 0 1rem;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .about {
+    width: 100%;
+  }
+  
+  .information {
+    width: 100%;
+  }
+}
 </style>

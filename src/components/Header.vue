@@ -60,7 +60,7 @@ export default {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 400;
-  font-size: 2.0625rem;
+  font-size: 2.1rem;
 }
 
 .my_name {
@@ -77,16 +77,12 @@ export default {
 }
 
 .image {
-  /* margin-top: 9.375rem;
-  margin-right: 31.25rem; */
   animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
   z-index: 1;
-  /* padding-left: 10rem; */
+
 }
 
 .description {
-  /* margin-top: 9.375rem;
-  margin-left: 31.25rem; */
   animation: slidein 1s ease-out, fadein 2s ease-out, slidein 1s ease-out;
   z-index: 1;
 }
@@ -181,6 +177,37 @@ export default {
   .my_photo {
     width: 10.75rem;
     height: 10.75rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container{
+    width: 100%;
+  }
+  .image {
+    margin-top: 5rem;
+    animation: slidein 1s ease-out, fadein 2s ease-out, slideinRight 1s ease-out;
+    z-index: 1;
+  }
+  
+  .description {
+    animation: slidein 1s ease-out, fadein 2s ease-out, slidein 1s ease-out;
+    z-index: 1;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1.8rem;
+  }
+  .description_words {
+    font-size: 2rem;
+  }
+  .my_photo {
+    width: 18.75rem;
+    height: 18.75rem;
   }
 }
 

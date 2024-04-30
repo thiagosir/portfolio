@@ -74,15 +74,6 @@ export default {
   }
 
   .header_nav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #232D3F;
-    align-items: center;
-    height: 3.125rem;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    transition: top 0.3s;
-    z-index: 1;
     justify-content: space-between;
   }
 
