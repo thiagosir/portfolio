@@ -10,7 +10,10 @@ export default {
       <img src="/src/assets/images/Icons/logo.svg" alt="Logo do site" class="img">
     </div>
     <div class="menu-style">
-      <a href="" class="menu">Menu</a>
+      <svg class="menu" width="40px" height="40px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 6H20M4 12H20M4 18H20" stroke="#161717" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
     </div>
     <ul class="nav">
       <li><a href="#aboutme" class="nav_text">Sobre</a></li>
@@ -78,7 +81,7 @@ export default {
   }
 
   .img {
-    margin: .5rem;
+    /* margin: .5rem; */
   }
 
   .menu {
@@ -86,8 +89,9 @@ export default {
     text-decoration: none;
     list-style-type: none;
     color: white;
-    margin: 1rem;
+    margin-right: 1.5rem;
     width: 100%;
+    cursor: pointer;
   }
 
 }
