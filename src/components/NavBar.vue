@@ -54,7 +54,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.875rem;
+  gap: 1.876rem;
   width: 100%;
 }
 
