@@ -1,6 +1,15 @@
 <script>
 export default {
-
+  data() {
+    return {
+      isMenuOpen: false
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    }
+  }
 };
 </script>
 
@@ -9,13 +18,19 @@ export default {
     <div class="scope">
       <img src="/src/assets/images/Icons/logo.svg" alt="Logo do site" class="img">
     </div>
-    <div class="menu-style">
-      <svg class="menu" width="40px" height="40px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 6H20M4 12H20M4 18H20" stroke="#161717" stroke-width="2" stroke-linecap="round"
+    <div class="menu-style" @click="toggleMenu">
+      <svg class="menu" v-if="!isMenuOpen" width="40px" height="40px" viewBox="0 0 24 24" fill="white"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      <svg class="close" v-else width="40px" height="40px" viewBox="0 0 24 24" fill="white"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18M6 6L18 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
           stroke-linejoin="round" />
       </svg>
     </div>
-    <ul class="nav">
+    <ul class="nav" :class="{ 'active': isMenuOpen }">
       <li><a href="#aboutme" class="nav_text">Sobre</a></li>
       <li><a href="#knowledge" class="nav_text">Conhecimentos</a></li>
       <li><a href="#experience" class="nav_text">Experiência</a></li>
@@ -56,43 +71,60 @@ export default {
   align-items: center;
   gap: 1.876rem;
   width: 100%;
+  transition: 0.5s;
 }
 
 .img {
   padding: 1rem;
 }
 
-.nav_text:hover {
-  transition: 0.5s;
-  color: rgb(199, 197, 197);
+.menu-style {
+  display: none;
 }
 
-.menu {
-  display: none
+.menu-style svg {
+  cursor: pointer;
+}
+
+.menu-style .close {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
+  .header_nav {
+  justify-content: space-between;
+  display: flex;
+
+}
+  .menu-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+
   .nav {
     display: none;
+    flex-direction: column;
+    background-color: #232D3F;
+    position: absolute;
+    top: 3.125rem;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 1;
   }
 
-  .header_nav {
-    justify-content: space-between;
+  .nav.active {
+    display: flex;
   }
 
-  .img {
-    /* margin: .5rem; */
-  }
-
-  .menu {
+  .menu-style .menu {
     display: block;
-    text-decoration: none;
-    list-style-type: none;
-    color: white;
-    margin-right: 1.5rem;
-    width: 100%;
-    cursor: pointer;
   }
 
+  .menu-style .close {
+    display: block;
+  }
 }
 </style>
