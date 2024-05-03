@@ -41,7 +41,7 @@ export default {
         </p>
       </div>
       <div class="image">
-        <img src="@/assets/images/myPic.jpeg" alt="" class="my_photo">
+        <img src="@/assets/images/portfolioImage.jpeg" alt="" class="my_photo">
       </div>
     </div>
   </div>
@@ -72,8 +72,8 @@ export default {
   border: solid;
   border-width: .125rem;
   border-color:  white;
-  width: 18.75rem;
-  height: 18.75rem;
+  width: 19.75rem;
+  height: 19.75rem;
 }
 
 .image {
