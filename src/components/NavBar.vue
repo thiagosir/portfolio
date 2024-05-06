@@ -31,11 +31,11 @@ export default {
       </svg>
     </div>
     <ul class="nav" :class="{ 'active': isMenuOpen }">
-      <li><a href="#aboutme" class="nav_text">Sobre</a></li>
-      <li><a href="#knowledge" class="nav_text">Conhecimentos</a></li>
-      <li><a href="#experience" class="nav_text">Experiência</a></li>
-      <li><a href="#projects" class="nav_text">Projetos</a></li>
-      <li><a href="#education" class="nav_text">Educação</a></li>
+      <li class="borders" ><a href="#aboutme" @click="toggleMenu" class="nav_text">Sobre</a></li>
+      <li class="borders" ><a href="#knowledge" @click="toggleMenu" class="nav_text">Conhecimentos</a></li>
+      <li class="borders" ><a href="#experience" @click="toggleMenu" class="nav_text">Experiência</a></li>
+      <li class="borders" ><a href="#projects" @click="toggleMenu" class="nav_text">Projetos</a></li>
+      <li class="borders" ><a href="#education" @click="toggleMenu" class="nav_text">Educação</a></li>
     </ul>
   </header>
 </template>
@@ -92,10 +92,11 @@ export default {
 
 @media screen and (max-width: 768px) {
   .header_nav {
-  justify-content: space-between;
-  display: flex;
+    justify-content: space-between;
+    display: flex;
 
-}
+  }
+
   .menu-style {
     display: flex;
     align-items: center;
@@ -113,6 +114,15 @@ export default {
     right: 0;
     padding: 1rem;
     z-index: 1;
+  }
+
+  .nav_text {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
   }
 
   .nav.active {
