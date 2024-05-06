@@ -37,7 +37,7 @@ export default {
     <div class="header">
       <div class="description">
         <p class="description_words">
-          Olá! <br> Me chamo <span class="my_name">Thiago Couto</span> <br> e sou desenvolvedor full stack
+          Olá! <br> Chamo-me <span class="my_name">Thiago Couto</span> <br> e sou desenvolvedor full stack.
         </p>
       </div>
       <div class="image">
