@@ -70,7 +70,6 @@ export default {
   align-items: center;
   display: flex;
   color: white;
-  /* gap: 1.25rem; */
 }
 
 .div-left {
