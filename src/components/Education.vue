@@ -186,7 +186,6 @@ export default {
     flex-direction: column;
     justify-content: start;
     width: 80%;
-    
     background-color: #0f0e0e;
   }
 
