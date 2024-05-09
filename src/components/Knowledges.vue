@@ -306,8 +306,6 @@ export default {
     cursor: pointer;
     width: 100%;
     height: 5rem;
-    /* margin: 0;
-    padding: 0; */
   }
   
   .tech_div {
