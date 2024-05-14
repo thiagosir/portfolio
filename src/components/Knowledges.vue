@@ -319,7 +319,6 @@ export default {
   .title {
     display: flex;
     justify-content: center;
-    /* padding-bottom: 7.5rem; */
     width: 60%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
