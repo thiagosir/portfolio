@@ -322,6 +322,7 @@ export default {
     width: 60%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    /* color: #161717; */
   }
 }
 </style>
